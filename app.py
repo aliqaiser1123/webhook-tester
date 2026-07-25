@@ -33,7 +33,7 @@ if submit:
             "name": name,
             "email": email,
             "company": company,
-            "message": message
+            "message": message,
             "budget": budget,
             "timeline": timeline,
             "contact_no": contact_no
