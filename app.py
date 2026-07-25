@@ -34,7 +34,7 @@ if submit:
             "email": email,
             "company": company,
             "message": message
-            "budget": email,
+            "budget": budget,
             "timeline": timeline,
             "contact_no": contact_no
         }
