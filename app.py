@@ -25,7 +25,7 @@ with st.form("lead_form"):
 
 if submit:
 
-    if not all([name, city, contact, email]):
+    if not all([name, company, budget, timeline, message, contact, email]):
         st.warning("Please fill all required fields.")
 
     else:
