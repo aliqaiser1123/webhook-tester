@@ -13,11 +13,14 @@ st.write("Please fill in your details below.")
 with st.form("lead_form"):
 
     name = st.text_input("Name")
-    city = st.text_input("City")
-    contact = st.text_input("Contact No.")
     email = st.text_input("Email")
-    message = st.text_area("Message")
-
+    company = st.text_input("Company")
+    message = st.text_area("Service Needed")
+    budget = st.text_input("Budget")
+    timeline = st.text_input("Timeline")
+    contact_no = st.text_input("Contact No.")
+    
+    
     submit = st.form_submit_button("Submit")
 
 if submit:
@@ -28,10 +31,12 @@ if submit:
     else:
         payload = {
             "name": name,
-            "city": city,
-            "contact": contact,
             "email": email,
+            "company": company,
             "message": message
+            "budget": email,
+            "timeline": timeline,
+            "contact_no": contact_no
         }
 
         try:
